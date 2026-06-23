@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: "Linux Libertine", "Georgia", "Times New Roman", serif;
   color: #202122;
-  background: #ffffff;
+  background: #f7f1e3;
   line-height: 1.6;
 }
 
@@ -22,8 +22,8 @@ a:hover {
 
 /* ---------- Cabecera ---------- */
 .site-header {
-  background: #f8f9fa;
-  border-bottom: 1px solid #a2a9b1;
+  background: #efe5cf;
+  border-bottom: 1px solid #cdbf9a;
   padding: 10px 24px;
 }
 .site-header-inner {
@@ -54,11 +54,11 @@ a:hover {
 
 /* ---------- Sidebar ---------- */
 .sidebar {
-  width: 240px;
+  width: 230px;
   flex-shrink: 0;
-  background: linear-gradient(180deg, #2b2118 0%, #1c150f 100%);
-  border-right: 3px solid #8b5e34;
-  padding: 20px 0 20px 14px;
+  background: #efe5cf;
+  border-right: 1px solid #d8cdab;
+  padding: 16px 12px;
   font-size: 0.85rem;
   position: sticky;
   top: 0;
@@ -67,57 +67,34 @@ a:hover {
   overflow-y: auto;
 }
 .sidebar h3 {
-  font-family: "Georgia", serif;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #d8b27c;
-  border-bottom: 1px solid #5a4632;
-  padding-bottom: 8px;
-  margin: 0 14px 10px 0;
+  letter-spacing: 0.03em;
+  color: #54595d;
+  border-bottom: 1px solid #cdbf9a;
+  padding-bottom: 4px;
+  margin-top: 0;
 }
 .sidebar ul {
   list-style: none;
   padding-left: 0;
-  margin: 0;
+  margin: 6px 0;
 }
 .sidebar ul ul {
-  margin: 2px 0 6px;
-  padding-left: 0;
+  padding-left: 14px;
+  margin-top: 4px;
 }
 .sidebar li {
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
-/* Pestañas con punta de flecha */
+/* Flecha (código ASCII 62, ">") antes de cada apartado */
+.sidebar a::before {
+  content: "\003E\0020";
+  color: #8b5e34;
+}
 .sidebar a {
-  display: block;
-  position: relative;
-  background: #3a2c1d;
-  color: #f1e2c9;
-  padding: 7px 22px 7px 14px;
-  margin-right: 14px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  clip-path: polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%);
-  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
-}
-.sidebar a:hover {
-  background: #8b5e34;
-  color: #fff;
-  text-decoration: none;
-  transform: translateX(3px);
-}
-.sidebar ul ul a {
-  background: #2a2014;
-  font-size: 0.8rem;
-  padding: 5px 18px 5px 10px;
-  margin-right: 10px;
-  color: #d8c2a0;
-}
-.sidebar ul ul a:hover {
-  background: #6e4a28;
-  color: #fff;
+  color: #0645ad;
 }
 
 /* ---------- Contenido principal ---------- */
@@ -182,44 +159,46 @@ li {
   float: right;
   width: 280px;
   margin: 0 0 16px 24px;
-  border: 1px solid #a2a9b1;
-  background: #f8f9fa;
+  border: 1px solid #cdbf9a;
+  background: #f1e9d6;
   font-size: 0.85rem;
+  position: sticky;
+  top: 16px;
 }
 .infobox-title {
-  background: #eaecf0;
+  background: #e7dabb;
   font-weight: bold;
   font-size: 1.1rem;
   text-align: center;
   padding: 8px;
-  border-bottom: 1px solid #a2a9b1;
+  border-bottom: 1px solid #cdbf9a;
 }
 .infobox-img {
   display: block;
   width: 100%;
   cursor: zoom-in;
-  border-bottom: 1px solid #a2a9b1;
+  border-bottom: 1px solid #cdbf9a;
 }
 .infobox-caption {
   text-align: center;
   font-size: 0.8rem;
   padding: 6px 8px;
   color: #54595d;
-  border-bottom: 1px solid #eaecf0;
+  border-bottom: 1px solid #e0d3ae;
 }
 .infobox-table {
   width: 100%;
   border-collapse: collapse;
 }
 .infobox-table th {
-  background: #eaecf0;
+  background: #e7dabb;
   text-align: left;
   padding: 6px 8px;
   font-size: 0.85rem;
 }
 .infobox-table td {
   padding: 5px 8px;
-  border-top: 1px solid #eaecf0;
+  border-top: 1px solid #e0d3ae;
   vertical-align: top;
 }
 .infobox-table td:first-child {
@@ -257,8 +236,8 @@ li {
 .gallery figure {
   width: 200px;
   margin: 0;
-  background: #f8f9fa;
-  border: 1px solid #c8ccd1;
+  background: #f1e9d6;
+  border: 1px solid #d8cdab;
   padding: 6px;
   text-align: center;
 }
@@ -281,15 +260,15 @@ li {
   font-size: 0.9rem;
 }
 .data-table th, .data-table td {
-  border: 1px solid #a2a9b1;
+  border: 1px solid #cdbf9a;
   padding: 8px 10px;
   text-align: left;
 }
 .data-table th {
-  background: #eaecf0;
+  background: #e7dabb;
 }
 .data-table tbody tr:nth-child(even) {
-  background: #f8f9fa;
+  background: #f1e9d6;
 }
 
 /* ---------- Referencias ---------- */
@@ -300,8 +279,8 @@ li {
 
 /* ---------- Footer ---------- */
 .site-footer {
-  border-top: 1px solid #a2a9b1;
-  background: #f8f9fa;
+  border-top: 1px solid #cdbf9a;
+  background: #efe5cf;
   text-align: center;
   font-size: 0.8rem;
   color: #54595d;
