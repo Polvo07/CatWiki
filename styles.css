@@ -187,6 +187,7 @@ li {
 .infobox-table {
   width: 100%;
   border-collapse: collapse;
+  font-family: "Times New Roman", Times, serif;
 }
 .infobox-table th {
   background: #e7dabb;
@@ -211,6 +212,7 @@ li {
   background: #f1e9d6;
   padding: 12px 24px;
   margin: 8px 0 24px;
+  font-family: "Times New Roman", Times, serif;
 }
 .toc-title {
   font-weight: bold;
@@ -311,6 +313,7 @@ li {
   border-collapse: collapse;
   margin: 16px 0 24px;
   font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
 }
 .data-table th, .data-table td {
   border: 1px solid #cdbf9a;
