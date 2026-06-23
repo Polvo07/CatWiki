@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gato - CatWiki</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <span class="site-logo">🐾 CatWiki</span>
+      <span class="site-tagline">Todo sobre tus gatos</span>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- Barra lateral de navegación -->
+    <nav class="sidebar">
+      <h3>Navegación</h3>
+      <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#taxonomia">Taxonomía</a></li>
+        <li><a href="#caracteristicas">Características físicas</a></li>
+        <li><a href="#comportamiento">Comportamiento</a></li>
+        <li><a href="#razas">Razas comunes</a></li>
+        <li><a href="#cuidados">Cuidados</a>
+          <ul>
+            <li><a href="#alimentacion">Alimentación</a></li>
+            <li><a href="#higiene">Higiene</a></li>
+            <li><a href="#salud">Salud y veterinario</a></li>
+            <li><a href="#ambiente">Ambiente y enriquecimiento</a></li>
+          </ul>
+        </li>
+        <li><a href="#reproduccion">Reproducción</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="content">
+
+      <h1 id="introduccion">Gato</h1>
+      <p class="article-meta">De CatWiki, la enciclopedia libre sobre gatos.</p>
+
+      <div class="article-body">
+
+        <!-- Infobox -->
+        <aside class="infobox">
+          <div class="infobox-title">Gato doméstico</div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg"
+               alt="Gato doméstico" class="infobox-img" onclick="openLightbox(this.src, this.alt)">
+          <div class="infobox-caption">Felis catus, ejemplar adulto</div>
+          <table class="infobox-table">
+            <tr><th colspan="2">Clasificación científica</th></tr>
+            <tr><td>Reino</td><td>Animalia</td></tr>
+            <tr><td>Filo</td><td>Chordata</td></tr>
+            <tr><td>Clase</td><td>Mammalia</td></tr>
+            <tr><td>Orden</td><td>Carnivora</td></tr>
+            <tr><td>Familia</td><td>Felidae</td></tr>
+            <tr><td>Género</td><td><i>Felis</i></td></tr>
+            <tr><td>Especie</td><td><i>Felis catus</i></td></tr>
+            <tr><th colspan="2">Datos generales</th></tr>
+            <tr><td>Esperanza de vida</td><td>12 - 18 años</td></tr>
+            <tr><td>Peso adulto</td><td>3 - 6 kg</td></tr>
+            <tr><td>Gestación</td><td>58 - 67 días</td></tr>
+            <tr><td>Domesticación</td><td>~ 9.500 años</td></tr>
+          </table>
+        </aside>
+
+        <p>
+          El <b>gato doméstico</b> (<i>Felis catus</i>) es un mamífero carnívoro de la familia
+          <i>Felidae</i>, comúnmente mantenido como animal de compañía. Es el único miembro
+          domesticado de dicha familia y se distingue por su agilidad, sus sentidos
+          desarrollados —especialmente el olfato, el oído y la visión nocturna— y su
+          comportamiento independiente pero también social cuando convive con humanos.
+        </p>
+        <p>
+          Se estima que la domesticación del gato comenzó hace aproximadamente 9.500 años en
+          el Cercano Oriente, asociada al desarrollo de la agricultura y la necesidad humana de
+          controlar poblaciones de roedores en los graneros. Desde entonces, el gato se ha
+          convertido en una de las mascotas más populares del mundo.
+        </p>
+
+        <h2 id="taxonomia">Taxonomía y origen</h2>
+        <p>
+          <i>Felis catus</i> pertenece al orden Carnivora y a la familia Felidae, que agrupa a
+          todos los felinos, desde los grandes depredadores como el león y el tigre hasta los
+          pequeños félidos salvajes. El antepasado silvestre más cercano del gato doméstico es
+          el gato montés africano (<i>Felis lybica</i>), del cual se separó genéticamente hace
+          miles de años mediante un proceso de domesticación gradual y, en parte, autoselectivo.
+        </p>
+
+        <h2 id="caracteristicas">Características físicas</h2>
+        <figure class="gallery-figure">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg"
+               alt="Detalle de los ojos de un gato" class="article-img"
+               onclick="openLightbox(this.src, this.alt)">
+          <figcaption>Los ojos felinos poseen una capa reflectante (tapetum lucidum) que mejora la visión nocturna.</figcaption>
+        </figure>
+        <p>
+          El gato posee un esqueleto flexible con más de 230 huesos, garras retráctiles, y
+          bigotes (vibrisas) altamente sensibles que le permiten orientarse en la oscuridad y
+          medir espacios estrechos. Su sistema auditivo puede percibir frecuencias de hasta
+          64.000 Hz, muy superior a la capacidad humana.
+        </p>
+        <ul>
+          <li><b>Visión:</b> excelente en condiciones de poca luz, aunque limitada en percepción del color.</li>
+          <li><b>Olfato:</b> hasta 14 veces más sensible que el del ser humano.</li>
+          <li><b>Equilibrio:</b> el reflejo de enderezamiento le permite caer de pie en la mayoría de los casos.</li>
+          <li><b>Pelaje:</b> varía en longitud, color y patrón según la raza y la genética individual.</li>
+        </ul>
+
+        <h2 id="comportamiento">Comportamiento</h2>
+        <p>
+          Los gatos son animales territoriales con hábitos crepusculares, es decir, muestran
+          mayor actividad al amanecer y al atardecer. Se comunican mediante maullidos,
+          ronroneos, posturas corporales y marcaje con glándulas odoríferas situadas en la
+          cara, las patas y la cola. Aunque históricamente se les consideró solitarios, los
+          estudios etológicos muestran que pueden formar vínculos sociales complejos tanto con
+          otros gatos como con humanos.
+        </p>
+
+        <h2 id="razas">Razas comunes</h2>
+        <div class="gallery">
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Mocha_Siberian_Cat.JPG"
+                 alt="Gato siberiano" onclick="openLightbox(this.src, this.alt)">
+            <figcaption>Siberiano</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Persialainen.jpg"
+                 alt="Gato persa" onclick="openLightbox(this.src, this.alt)">
+            <figcaption>Persa</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Sphynx_-_cat._img_031.jpg"
+                 alt="Gato esfinge" onclick="openLightbox(this.src, this.alt)">
+            <figcaption>Esfinge (Sphynx)</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Siamese_cat.JPG"
+                 alt="Gato siamés" onclick="openLightbox(this.src, this.alt)">
+            <figcaption>Siamés</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg"
+                 alt="Rigby the Cat" onclick="openLightbox(this.src, this.alt)">
+            <figcaption>Rigby the Cat<sup>[cita requerida]</sup></figcaption>
+          </figure>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr><th>Raza</th><th>Origen</th><th>Pelaje</th><th>Temperamento</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Siberiano</td><td>Rusia</td><td>Largo, denso, triple capa</td><td>Tranquilo, afectuoso</td></tr>
+            <tr><td>Persa</td><td>Irán (Persia)</td><td>Largo, sedoso</td><td>Calmado, sedentario</td></tr>
+            <tr><td>Esfinge</td><td>Canadá</td><td>Sin pelo (o muy fino)</td><td>Curioso, sociable</td></tr>
+            <tr><td>Siamés</td><td>Tailandia</td><td>Corto, ceñido</td><td>Vocal, muy activo</td></tr>
+            <tr><td>Maine Coon</td><td>Estados Unidos</td><td>Semilargo</td><td>Dócil, juguetón</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="cuidados">Cuidados</h2>
+        <p>
+          El bienestar de un gato doméstico depende de una combinación de alimentación
+          adecuada, higiene, atención veterinaria regular y un entorno que favorezca su
+          comportamiento natural. A continuación se detallan los aspectos esenciales del
+          cuidado felino.
+        </p>
+
+        <h3 id="alimentacion">Alimentación</h3>
+        <p>
+          El gato es un carnívoro estricto (obligado), lo que significa que su organismo
+          requiere nutrientes presentes únicamente en tejidos animales, como la taurina, el
+          ácido araquidónico y la vitamina A preformada. Una dieta deficiente en estos
+          elementos puede causar problemas cardíacos y oculares graves.
+        </p>
+        <ul>
+          <li>Proporcionar alimento comercial de calidad formulado específicamente para gatos, según su etapa de vida (cachorro, adulto, senior).</li>
+          <li>Mantener agua fresca disponible en todo momento; los gatos tienden a beber poco, por lo que fuentes de agua corriente pueden estimular su hidratación.</li>
+          <li>Evitar alimentos tóxicos como cebolla, ajo, chocolate, uvas y lácteos en exceso.</li>
+          <li>Controlar las porciones para prevenir la obesidad, un problema frecuente en gatos esterilizados y sedentarios.</li>
+        </ul>
+
+        <h3 id="higiene">Higiene</h3>
+        <ul>
+          <li>Mantener la caja de arena limpia, con limpieza diaria y cambio completo periódico, ya que los gatos son especialmente sensibles a la suciedad.</li>
+          <li>Cepillar el pelaje con regularidad (más frecuente en razas de pelo largo) para reducir la formación de bolas de pelo y mantener la piel sana.</li>
+          <li>Revisar y limpiar las orejas y recortar las uñas cuando sea necesario, utilizando herramientas adecuadas.</li>
+          <li>El gato realiza su propio aseo mediante el acicalado (autolimpieza), por lo que los baños solo son necesarios en casos específicos.</li>
+        </ul>
+
+        <h3 id="salud">Salud y atención veterinaria</h3>
+        <ul>
+          <li>Vacunación periódica contra enfermedades como la panleucopenia felina, la rinotraqueítis y la leucemia felina.</li>
+          <li>Desparasitación interna y externa regular, incluso en gatos que no salen al exterior.</li>
+          <li>Esterilización (castración u ovariohisterectomía), recomendada para prevenir enfermedades reproductivas y controlar la población felina.</li>
+          <li>Revisiones veterinarias anuales, y más frecuentes en gatos senior (a partir de los 7-10 años).</li>
+          <li>Atención a signos de enfermedad: cambios en el apetito, letargo, vómitos frecuentes o alteraciones en el uso de la caja de arena.</li>
+        </ul>
+
+        <h3 id="ambiente">Ambiente y enriquecimiento</h3>
+        <ul>
+          <li>Proveer rascadores para satisfacer la necesidad natural de afilar las uñas y marcar territorio.</li>
+          <li>Ofrecer juguetes y sesiones de juego diarias que simulen el comportamiento de caza.</li>
+          <li>Habilitar zonas elevadas (estanterías, árboles para gatos) que les permitan observar su entorno desde la altura, algo instintivo en la especie.</li>
+          <li>Evitar el estrés derivado de cambios bruscos en el entorno, ya que los gatos son animales de hábitos y territorio.</li>
+        </ul>
+
+        <h2 id="reproduccion">Reproducción</h2>
+        <p>
+          Las hembras alcanzan la madurez sexual entre los 5 y 9 meses de edad y pueden entrar
+          en celo varias veces al año. La gestación dura entre 58 y 67 días, y el tamaño medio
+          de la camada oscila entre 3 y 5 gatitos. La esterilización temprana es la práctica
+          recomendada por veterinarios para evitar camadas no deseadas y reducir riesgos de
+          salud asociados al ciclo reproductivo.
+        </p>
+
+        <h2 id="curiosidades">Curiosidades</h2>
+        <ul>
+          <li>El ronroneo se produce en un rango de frecuencia (25-150 Hz) que podría tener efectos beneficiosos en la curación de tejidos y huesos.</li>
+          <li>Los gatos pasan entre el 50% y el 70% de su vida durmiendo.</li>
+          <li>Cada gato tiene un patrón de huella nasal único, similar a una huella digital humana.</li>
+          <li>No pueden percibir el sabor dulce debido a una mutación en el gen receptor correspondiente.</li>
+        </ul>
+
+        <h2 id="referencias">Referencias</h2>
+        <ol class="references">
+          <li>International Cat Care — <i>Guías de bienestar felino</i>.</li>
+          <li>American Association of Feline Practitioners (AAFP) — <i>Feline Life Stage Guidelines</i>.</li>
+          <li>Driscoll, C. A. et al. (2007). <i>The Near Eastern Origin of Cat Domestication</i>. Science.</li>
+          <li>World Small Animal Veterinary Association (WSAVA) — <i>Nutritional Guidelines</i>.</li>
+        </ol>
+
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>CatWiki</p>
+  </footer>
+</div>
+
+<!-- Lightbox para imágenes ampliadas -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-caption" class="lightbox-caption"></p>
+</div>
+
+<script>
+  function openLightbox(src, caption) {
+    const lightbox = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-caption').textContent = caption || '';
+    lightbox.classList.add('active');
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+</body>
+</html>
