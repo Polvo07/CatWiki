@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CatWiki, la enciclopedia libre sobre gatos: taxonomía, características físicas, comportamiento, razas y cuidados del gato doméstico (Felis catus).">
 <title>Gato - CatWiki</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -52,7 +54,7 @@
         <div class="infobox-title">Gato doméstico</div>
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg"
              alt="Gato doméstico" class="infobox-img" onclick="openLightbox(this.src, this.alt)">
-        <div class="infobox-caption">Felis catus, ejemplar adulto</div>
+        <div class="infobox-caption">Felis catus, ejemplar adulto<br><span class="img-credit">Fuente: Wikimedia Commons</span></div>
         <table class="infobox-table">
           <tr><th colspan="2">Clasificación científica</th></tr>
           <tr><td>Reino</td><td>Animalia</td></tr>
@@ -88,6 +90,28 @@
           convertido en una de las mascotas más populares del mundo.
         </p>
 
+        <!-- Tabla de contenidos -->
+        <nav class="toc" aria-label="Tabla de contenidos">
+          <div class="toc-title">Contenido</div>
+          <ol class="toc-list">
+            <li><a href="#taxonomia">Taxonomía y origen</a></li>
+            <li><a href="#caracteristicas">Características físicas</a></li>
+            <li><a href="#comportamiento">Comportamiento</a></li>
+            <li><a href="#razas">Razas comunes</a></li>
+            <li><a href="#cuidados">Cuidados</a>
+              <ol class="toc-list">
+                <li><a href="#alimentacion">Alimentación</a></li>
+                <li><a href="#higiene">Higiene</a></li>
+                <li><a href="#salud">Salud y atención veterinaria</a></li>
+                <li><a href="#ambiente">Ambiente y enriquecimiento</a></li>
+              </ol>
+            </li>
+            <li><a href="#reproduccion">Reproducción</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+          </ol>
+        </nav>
+
         <h2 id="taxonomia">Taxonomía y origen</h2>
         <p>
           <i>Felis catus</i> pertenece al orden Carnivora y a la familia Felidae, que agrupa a
@@ -103,6 +127,7 @@
                alt="Detalle de los ojos de un gato" class="article-img"
                onclick="openLightbox(this.src, this.alt)">
           <figcaption>Los ojos felinos poseen una capa reflectante (tapetum lucidum) que mejora la visión nocturna.</figcaption>
+          <p class="img-credit">Fuente: Wikimedia Commons</p>
         </figure>
         <p>
           El gato posee un esqueleto flexible con más de 230 huesos, garras retráctiles, y
@@ -133,26 +158,31 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Mocha_Siberian_Cat.JPG"
                  alt="Gato siberiano" onclick="openLightbox(this.src, this.alt)">
             <figcaption>Siberiano</figcaption>
+            <span class="img-credit">Wikimedia Commons</span>
           </figure>
           <figure>
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Persialainen.jpg"
                  alt="Gato persa" onclick="openLightbox(this.src, this.alt)">
             <figcaption>Persa</figcaption>
+            <span class="img-credit">Wikimedia Commons</span>
           </figure>
           <figure>
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Sphynx_-_cat._img_031.jpg"
                  alt="Gato esfinge" onclick="openLightbox(this.src, this.alt)">
             <figcaption>Esfinge (Sphynx)</figcaption>
+            <span class="img-credit">Wikimedia Commons</span>
           </figure>
           <figure>
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Siamese_cat.JPG"
                  alt="Gato siamés" onclick="openLightbox(this.src, this.alt)">
             <figcaption>Siamés</figcaption>
+            <span class="img-credit">Wikimedia Commons</span>
           </figure>
           <figure>
             <img src="images/Rigby the cat.jpg"
                  alt="Rigby the Cat" onclick="openLightbox(this.src, this.alt)">
-            <figcaption>Rigby the Cat<sup>[cita requerida]</sup></figcaption>
+            <figcaption>Rigby the Cat</figcaption>
+            <span class="img-credit">@iamrigbycat (Instagram)</span>
           </figure>
         </div>
         <table class="data-table">
@@ -240,6 +270,14 @@
           <li>World Small Animal Veterinary Association (WSAVA) — <i>Nutritional Guidelines</i>.</li>
         </ol>
 
+      </div>
+
+      <div class="categories">
+        <b>Categorías:</b>
+        <a href="#">Felinos</a> ·
+        <a href="#">Mascotas</a> ·
+        <a href="#">Mamíferos carnívoros</a> ·
+        <a href="#">Animales domésticos</a>
       </div>
     </main>
   </div>
