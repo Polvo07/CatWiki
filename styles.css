@@ -162,8 +162,6 @@ li {
   border: 1px solid #cdbf9a;
   background: #f1e9d6;
   font-size: 0.85rem;
-  position: sticky;
-  top: 16px;
 }
 .infobox-title {
   background: #e7dabb;
