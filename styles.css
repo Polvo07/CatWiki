@@ -158,7 +158,7 @@ li {
 .infobox {
   float: right;
   width: 280px;
-  margin: 0 0 16px 24px;
+  margin: -6px 0 16px 24px;
   border: 1px solid #cdbf9a;
   background: #f1e9d6;
   font-size: 0.85rem;
